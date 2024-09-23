@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos Mensuales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="img-container">
+                <img src="./assets/img/titulo.png" alt="Título Control de Gastos" />
+            </div>
+            <div class="form-group">
+                <!-- Campo para el nombre del gasto -->
+                <input type="text" id="nombreGasto" placeholder="Nombre del gasto">
+                
+                <!-- Campo para el valor del gasto -->
+                <input type="number" id="valorGasto" placeholder="Valor del gasto" min="0" step="0.01">
+                
+                <!-- Campo para la descripción del gasto -->
+                <input type="text" id="descripcionGasto" placeholder="Descripción del gasto">
+
+                <!-- Botón para agregar el gasto -->
+                <button id="botonFormulario" onclick="clickBoton();">Agregar Gasto</button>
+            </div>
+
+            <!-- Lista de gastos registrados -->
+            <ul id="listaDeGastos"></ul>
+            
+            <!-- Muestra del total de los gastos mensuales -->
+            <div class="total">
+                Total Mensual: US$ <span id="totalGastos">0.00</span>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
